@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+
+    <link rel="stylesheet" href="style.css">
+  
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Hace que al hacer clic baje suavemente */
+        }
+
+        body {
+            background-color: #ec85ab;
+            color: #0c0c0c;
+            line-height: 1.6;
+        }
+
+        /* BARRA DE NAVEGACIÓN (EL ENCABEZADO) */
+        header {
+            background-color: #d03cc8;
+            color: rgb(10, 7, 27);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+            align-items: center;
+            position: fixed; /* Se queda arriba siempre */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(185, 119, 119, 0.2);
+        }
+
+       
+
+        .inicio-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    text-align: center;      /* Centra el texto */
+    min-height: 100vh;       /* Hace que ocupe todo el alto de la pantalla */
+    background-color: #e986a3; /* El color rosado de tu fondo */
+}
+
+/* Estilos para el bloque de contenido */
+.perfil-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para la foto cuadrada */
+.foto-perfil {
+    width: 200px;           /* Ajusta el tamaño que desees */
+    height: 200px;          /* Debe ser igual al ancho para ser cuadrada */
+    object-fit: cover;      /* Evita que la imagen se estire feo */
+    border: 5px solid rgb(191, 176, 176); /* El borde blanco que tienes en la captura */
+    margin-bottom: 30px;    /* Espacio entre la foto y el nombre */
+    border-radius: 0%;      /* Forzamos a que sea cuadrada (0% esquinas) */
+}
+
+/* Estilo del nombre */
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #993ab4;
+        }
+
+        .perfil-img {
+    width: 200px;      /* Ancho de la foto */
+    height: 200px;     /* Alto de la foto */
+    border-radius: 60%; /* Esto la hace circular */
+    object-fit: cover; /* Evita que la foto se estire feo */
+    border: 4px solid #bd449b; /* Un borde de color para que resalte */
+}
+
+        /* SECCIONES */
+        section {
+            padding: 100px 10%; /* Espacio para que no choque con el menú */
+            min-height: 100vh; /* Cada sección ocupa toda la pantalla */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .perfil-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .btn-cv {
+            display: inline-block;
+            background: #43094b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: fit-content;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 20px; }
+        h2 { color: #731b7b; margin-bottom: 20px; border-left: 5px solid #3498db; padding-left: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MiPerfil</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+    <div class="hero-content">
+        <img src="foto.perfil.jpeg" class="foto-perfil">
+        <h1>SAIDA JUDITH DONAIRE HERNANDEZ</h1>
+        <p>Estudiante Bachillerato Técnico Profesional en Informática con Dipliomado en Robotica e Inteligencia Artificial</p>
+
+       <a href="cv.pdf" download>
+            <button>Descargar CV</button>
+        </a>
+
+    </div>
+</section>
+
+
+
+
+    <section id="sobre mi" class="section">
+        <h2> • Sobre Mí</h2>
+        <p>Soy Estudiante de Ultimo Año de Informatica.</p>
+        <p>Me gusta leer y aprender sobre  la informática.</p>
+    </section>
+
+    <section id="habilidades" class="sección dark">
+        <h2> • Habilidades</h2>
+         <div class="skills">
+            <p> ✔️ HTML</p>
+         <div class="bar">
+            <div class="progress html"></div>
+        </div>
+    </div>
+
+     <div class="skills">
+        <p> ✔️ CSS</p>
+        <div class="bar">
+            <div class="progress css"></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <p> ✔️ JavaScript</p>
+        <div class="bar">
+            <div class="progress js"></div>
+        </div>
+    </div>
+
+    </section>
+
+<section id="proyectos" class="section">
+    <h2> • Proyectos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3> ✔️ Perfil Web</h3>
+            <p>  Desarrollo de perfil profesional en HTML y CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3> ✔️ Sistema Chorotega</h3>
+            <p>Sistema.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contacto" class="section">
+    <h2> •  Contacto</h2>
+
+    <div class="cards">
+        <div class="card">
+            <p> 📞 +504 9586-0510</p>
+            <p> ✉️ saida@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Saida Donaire | Perfil Profesional</p>
+</footer>
+
+
+
+</head>
+<body>
+
+    
+
+    </body>
+</html>
+  
+
+
+
+
+                          
